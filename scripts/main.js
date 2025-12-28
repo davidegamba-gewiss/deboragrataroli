@@ -13,7 +13,6 @@
     const STORAGE_KEY = 'deborasite_hide_birthday_modal';
     const MODAL_ID = 'birthdayModal';
     const CLOSE_BTN_ID = 'closeModal';
-    const CHECKBOX_ID = 'dontShowAgain';
 
     // ========================================
     // DOM ELEMENTS
@@ -21,7 +20,6 @@
 
     let modal = null;
     let closeBtn = null;
-    let checkbox = null;
     let focusableElements = [];
     let firstFocusableElement = null;
     let lastFocusableElement = null;
@@ -39,9 +37,8 @@
     function initModal() {
         modal = document.getElementById(MODAL_ID);
         closeBtn = document.getElementById(CLOSE_BTN_ID);
-        checkbox = document.getElementById(CHECKBOX_ID);
 
-        if (!modal || !closeBtn || !checkbox) {
+        if (!modal || !closeBtn) {
             console.error('Modal elements not found');
             return;
         }
@@ -106,11 +103,6 @@
         // Return focus to last focused element
         if (lastFocusedElement) {
             lastFocusedElement.focus();
-        }
-
-        // Save preference if checkbox is checked
-        if (checkbox.checked) {
-            localStorage.setItem(STORAGE_KEY, 'true');
         }
     }
 
@@ -205,8 +197,8 @@
             link.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
 
-                // Skip if href is just "#" or "#privacy" (placeholder)
-                if (href === '#' || href === '#privacy') {
+                // Skip if href is just "#"
+                if (href === '#') {
                     e.preventDefault();
                     return;
                 }
