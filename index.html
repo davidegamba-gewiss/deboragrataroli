@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Debora Grataroli - Cantante</title>
+    <meta name="description" content="Debora Grataroli, giovane cantante emergente. Scopri la sua musica, i video e seguila sui social.">
+    <meta name="keywords" content="Debora Grataroli, cantante, musica, vocalist, artista">
+    <meta name="author" content="Debora Grataroli">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deboragrataroli.com/">
+    <meta property="og:title" content="Debora Grataroli - Cantante">
+    <meta property="og:description" content="Debora Grataroli, giovane cantante emergente. Scopri la sua musica, i video e seguila sui social.">
+    <meta property="og:image" content="https://deboragrataroli.com/assets/photos/debora.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://deboragrataroli.com/">
+    <meta property="twitter:title" content="Debora Grataroli - Cantante">
+    <meta property="twitter:description" content="Debora Grataroli, giovane cantante emergente. Scopri la sua musica, i video e seguila sui social.">
+    <meta property="twitter:image" content="https://deboragrataroli.com/assets/photos/debora.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎤</text></svg>">
+
+    <!-- Fonts - Poppins for headings, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <!-- Birthday Modal Popup -->
+    <div id="birthdayModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDesc" aria-modal="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">🎉 Buon 19° compleanno, Debora!</h2>
+            </div>
+            <div class="modal-body">
+                <p id="modalDesc">Questo sito è un regalo per te! Lo modificheremo insieme con calma in base alle tue richieste e preferenze. Per ora, goditi questa sorpresa! 💜</p>
+            </div>
+            <div class="modal-footer">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="dontShowAgain">
+                    <span>Non mostrare più</span>
+                </label>
+                <button id="closeModal" class="btn-primary">Chiudi</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <header class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-image-wrapper">
+                    <img
+                        src="assets/photos/debora.jpg"
+                        alt="Debora Grataroli, cantante sorridente con microfono"
+                        class="hero-image"
+                        loading="eager"
+                    >
+                </div>
+                <h1 class="hero-title">Debora Grataroli</h1>
+                <p class="hero-tagline">Voce, passione, emozione</p>
+            </div>
+        </header>
+
+        <!-- Video Section -->
+        <section class="videos" id="videos">
+            <div class="container">
+                <h2 class="section-title">I Miei Video</h2>
+                <div class="video-grid">
+                    <!-- TODO: Sostituire VIDEO_ID_1 con l'ID reale del primo video YouTube -->
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/VIDEO_ID_1"
+                            title="Video performance di Debora Grataroli - Video 1"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+
+                    <!-- TODO: Sostituire VIDEO_ID_2 con l'ID reale del secondo video YouTube -->
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/VIDEO_ID_2"
+                            title="Video performance di Debora Grataroli - Video 2"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Section -->
+        <section class="social" id="social">
+            <div class="container">
+                <h2 class="section-title">Seguimi</h2>
+                <div class="social-grid">
+
+                    <!-- Instagram -->
+                    <!-- TODO: Sostituire USERNAME con l'username Instagram reale -->
+                    <a href="https://instagram.com/USERNAME" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Seguimi su Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+
+                    <!-- TikTok -->
+                    <!-- TODO: Sostituire USERNAME con l'username TikTok reale -->
+                    <a href="https://tiktok.com/@USERNAME" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Seguimi su TikTok">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                        </svg>
+                        <span>TikTok</span>
+                    </a>
+
+                    <!-- YouTube -->
+                    <!-- TODO: Sostituire USERNAME con l'username YouTube reale -->
+                    <a href="https://youtube.com/@USERNAME" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Iscriviti al mio canale YouTube">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                        <span>YouTube</span>
+                    </a>
+
+                    <!-- Spotify -->
+                    <!-- TODO: Sostituire ARTIST_ID con l'ID artista Spotify reale -->
+                    <a href="https://open.spotify.com/artist/ARTIST_ID" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Ascoltami su Spotify">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                        </svg>
+                        <span>Spotify</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contatti</h3>
+                    <!-- TODO: Sostituire con l'email reale di Debora -->
+                    <p><a href="mailto:deboragrataroli@example.com" class="footer-link">deboragrataroli@example.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <p>&copy; 2025 Debora Grataroli. Tutti i diritti riservati.</p>
+                    <!-- TODO: Aggiungere link alla pagina privacy policy quando disponibile -->
+                    <p><a href="#privacy" class="footer-link">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js"></script>
+
+</body>
+</html>
